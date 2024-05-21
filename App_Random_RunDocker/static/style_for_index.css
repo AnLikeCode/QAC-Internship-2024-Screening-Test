@@ -1,0 +1,90 @@
+/* Google Fonts Link */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(image/background_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.Random_App{
+    width: 400px;
+    background: #ffffff3f;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* .input_box span{
+    font-size: 20px;
+    font-weight: bold; 
+} */
+
+.input_box .icon{
+    margin-bottom: 15px;
+    margin-top: 15px;
+    position: relative;
+}
+
+.input_box .icon i{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-right: 2px solid #ccc;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.input_box .icon input{
+    padding: 10px;
+    padding-left: 50px;
+    width: 100%;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #ccc;
+    font-size: 18px;
+    box-shadow: 1px 1px 2px #00ffe0;
+}
+
+.Random_App button{
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    cursor: pointer;
+    background: linear-gradient(to right, #ff00b8, #0059ff);
+    background: #fff;
+}
+
+.Random_App button:hover{
+    background: linear-gradient(to left, #ff00b8, #008cff);
+}
+
+@media screen and (max-width: 425px) {
+    .Random_App{
+        width: 93%;
+    }
+}
+
+.title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}

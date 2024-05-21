@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_for_result.css') }}">
+</head>
+<body>
+    <div class="Random_App">
+        <div class="title_1">
+            <h1>Result</h1>
+        </div>
+        <p class="title_2">Random List</p> 
+        <p class="text">{{ result['list_n'] }}</p>
+        <p class="title_2">Số K</p> 
+        <p class="text">{{ result['k'] }}</p>
+        <p class="title_2">Check K & Step</p> 
+        <p class="text">{{ result['check_k'] }}, {{ result['sobuoc'] }}</p>
+        <p class="title_2">List of elements less than K</p> 
+        <p class="text">{{ result['list_less'] }}</p>
+        <p class="title_2">Step</p> 
+        <p class="text">{{ result['sobuoc_less'] }}</p>
+    </div>
+    <!-- <h1>Kết quả</h1>
+    <p>List 2n là: {{ result['list_n'] }}</p>
+    <p>Số k: {{ result['k'] }}</p>
+    <p>Check k: {{ result['check_k'] }}</p>
+    <p>Số bước tìm k: {{ result['sobuoc'] }}</p>
+    <p>List đã sắp xếp: {{ result['list_new'] }}</p>
+    <p>List phần tử nhỏ hơn k: {{ result['list_less'] }}</p>
+    <p>Số bước tìm list nhỏ hơn k: {{ result['sobuoc_less'] }}</p> -->
+</body>
+</html>

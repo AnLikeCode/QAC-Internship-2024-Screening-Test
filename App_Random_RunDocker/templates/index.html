@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random_App</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_for_index.css') }}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+
+    <div class="Random_App">
+        <form action="/random_list" method="POST">
+            <div class="input_box">
+                <label class="title" for="title">Nhập số nguyên n:</label>
+                <div class="icon">
+                    <i class='bx bx-code-alt'></i>
+                    <input type="number" name='n' placeholder="Enter" min="1" max="62"> 
+                </div>
+                <button type="submit">Sent</button>
+            </div>
+    </div>
+    
+</body>
+</html>
