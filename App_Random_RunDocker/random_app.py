@@ -72,11 +72,13 @@ def process():
     #Lời gọi hàm và gán các giá trị
     list_n, k = generate_random_list(m)
     list_new = sorted(list_n)
+    step_sort_list = len(list_n)
     check_k, sobuoc, position  = binary_rearch(list_new, k)
     list_less, sobuoc_less = list_less_than_k(list_new, k)
 
     result = {
         'list_n': list_n,
+        'step_sort_list': step_sort_list,
         'k': k,
         'check_k': check_k,
         'sobuoc': sobuoc,
