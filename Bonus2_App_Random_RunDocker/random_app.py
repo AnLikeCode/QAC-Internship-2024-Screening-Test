@@ -3,12 +3,10 @@ import random
 
 app = Flask(__name__)
 
-
 #Trang web xuất hiện đầu tiên
 @app.route('/')
 def index():
     return render_template('index.html')
-
 
 @app.route('/random_list', methods=['POST'])
 def process():
@@ -86,7 +84,6 @@ def process():
         'sobuoc_less': sobuoc_less
     }
     return render_template('result.html', result=result)
-
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port = 8080, debug = True)
